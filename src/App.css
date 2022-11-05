@@ -1,0 +1,84 @@
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#app-container {
+  width: 100%;
+  height: 100%;
+}
+
+.full-width {
+  inset: 0 !important;
+}
+
+.content-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  inset: 0px 0px 0px 274px;
+  transition: all 0.3s ease-out 0s;
+}
+
+.content-container-absolute {
+  inset: 0;
+}
+
+.note-editor-container {
+  width: 100%;
+  height: calc(100% - 40px);
+}
+
+.toolbar-container {
+  width: 100%;
+  height: 40px;
+  background-color: #8b05d8;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  display: none;
+}
+
+.toolbar-container > div {
+  padding: 3px 8px;
+}
+
+.toolbar-container .active-tab {
+  background-color: #fff;
+}
+
+.toolbar-container .tab {
+  height: 30px;
+  width: 120px;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.toolbar-container .tab p {
+  font-weight: 700;
+  font-family: "Inter" !important;
+}
+
+.toolbar-container .active-tab p {
+  color: #8b05d8;
+}
+
+.toolbar-container > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-close-toolbar {
+  width: 100%;
+}
+
+/* Ant design customizations */
+.ant-tooltip-inner {
+  user-select: none;
+}

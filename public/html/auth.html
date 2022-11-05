@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Notealy :: Login</title>
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/login.css" />
+</head>
+
+<body>
+  <div class="login-container notealy-app-container">
+    <form class="form-container" id="loginForm">
+      <div class="heading-container">
+        <h3>Welcome Back,</h3>
+        <h1>Login</h1>
+      </div>
+
+      <div class="form-body">
+        <div>
+          <input type="email" placeholder="Email" class="no-outline" id="emailInput" />
+          <span id="emailError">invalid email provided</span>
+        </div>
+        <div>
+          <input type="password" placeholder="Password" class="no-outline" id="passwordInput" />
+          <span id="passwordError">invalid password</span>
+        </div>
+
+        <button type="submit" class="btn black white-text" id="loginButton">
+          <span id="loginButtonText">Sign In</span><span id="loginButtonSpinner">
+            <img src="../Spinner-1s-200px.gif" alt="" /></span>
+        </button>
+        <!-- <a id="changePageButton">Don't have an account? Create one</a> -->
+      </div>
+    </form>
+  </div>
+  <div class="register-container notealy-app-container">
+    <form class="form-container" id="registerForm">
+      <div class="heading-container">
+        <h3>Welcome,</h3>
+        <h1>Create Account</h1>
+      </div>
+
+      <div class="form-body">
+        <div>
+          <input type="text" placeholder="Name" class="no-outline" id="nameInput" />
+          <span id="nameError">Incorrect name</span>
+        </div>
+        <div>
+          <input type="email" placeholder="Email" class="no-outline" id="emailInputRegister" />
+          <span id="emailErrorRegister">invalid email provided</span>
+        </div>
+        <div>
+          <input type="password" placeholder="Password" class="no-outline" id="passwordInputRegister" />
+          <span id="passwordErrorRegister">invalid password</span>
+        </div>
+        <button type="submit" class="btn black white-text" id="registerButton">
+          <span id="loginButtonTextRegister">Create Account</span><span id="registerButtonSpinner">
+            <img src="../Spinner-1s-200px.gif" alt="" /></span>
+        </button>
+        <a id="changePageButtonRegister">Already have an account? Log in</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+
+</html>

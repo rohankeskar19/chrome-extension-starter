@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#notealy-extension-root {
+  width: 40%;
+  max-width: 100% !important;
+  height: 100% !important;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 2147483647;
+  background-color: white;
+  box-shadow: 0px 0px 5px #0000009e;
+}
+
+#notealy-extension-root iframe {
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#notealy-modal-iframe-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 2147483647;
+  top: 0;
+  left: 0;
+}
+
+#notealy-modal-iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#notealy-side-toggle-iframe-container {
+  width: 45px;
+  height: 50px;
+  position: fixed;
+  z-index: 2147483646;
+  top: 300px;
+  right: 0;
+}
+
+#notealy-side-toggle-iframe-container iframe {
+  width: auto;
+  height: 100%;
+  border: none !important;
+}
+
+#notealy-highlight-tool-iframe-container {
+  display: none;
+  position: fixed;
+  z-index: 2147483646;
+  width: 190px;
+  height: 45px;
+}
+
+#notealy-highlight-tool-iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+}
+
+#notealy-highlight-hover-tool-iframe-container {
+  display: none;
+  position: fixed;
+  width: 100px;
+  height: 45px;
+}
+
+#notealy-highlight-hover-tool-iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+}
+
+#notealy-side-toggle-iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+}
+
+#resize-handle {
+  width: 5px;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  left: -2px;
+  cursor: col-resize;
+  transition: all 0.2s;
+}
+
+#resize-handle:active {
+  background-color: rgb(10, 198, 255);
+}
+
+.notealy-highlighter-highlighted {
+  cursor: pointer !important;
+}
+
+#notealy-save-button,
+#notealy-addtonote-button {
+  font-family: "Inter", sans-serif !important;
+  color: #fff !important;
+  font-size: 12px !important;
+  border-radius: 100px !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  z-index: 2147483644 !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  padding: 1px !important;
+  z-index: 2147483644 !important;
+  position: fixed !important;
+  background-color: #4a4a4a !important;
+  border: 2px solid #fff !important;
+  box-sizing: unset !important;
+}
+
+#notealy-addtonote-button {
+  width: 25px !important;
+  height: 25px !important;
+  box-sizing: unset !important;
+}
+
+#notealy-save-button {
+  width: 90px !important;
+  height: 25px !important;
+  text-align: center;
+  box-sizing: unset !important;
+  padding: 3px 10px !important;
+}
+
+#notealy-save-button *,
+#notealy-addtonote-button * {
+  color: #fff !important;
+  box-sizing: unset !important;
+}

@@ -1,0 +1,121 @@
+.snap-card {
+  width: 350px;
+  min-height: 150px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 7px;
+  user-select: none;
+  margin-top: 30px;
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.snap-card:hover .snap-card-menu-toggle {
+  opacity: 1;
+}
+
+.snap-card-image-container {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  position: relative;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.snap-card-image {
+  display: block !important;
+  width: auto;
+  max-width: 100%;
+  min-height: 50px;
+  max-height: 500px;
+  height: auto;
+  cursor: pointer;
+}
+
+.snap-card-controls-container {
+  width: 100%;
+  min-height: 50px;
+  max-height: 80px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  padding-bottom: 15px;
+  transition: all 0.2s;
+}
+
+.snap-card-menu-toggle {
+  width: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  cursor: pointer;
+  background-color: #cfcfcf;
+  padding: 10px 13px;
+  border-radius: 3px;
+  border: 1px solid #9c9c9c;
+  opacity: 0;
+}
+
+.snap-card-menu {
+  width: 205px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.snap-card-menu > div {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 8px;
+  user-select: none;
+}
+
+.snap-card-menu > div > img {
+  margin-right: 10px;
+}
+
+.snap-card-menu > div:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.snap-card-menu > div:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.snap-card-menu > div:hover {
+  background-color: #eee;
+}
+
+.excess-tags-count {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  background-color: rgb(232, 232, 232);
+}
+
+@media only screen and (max-width: 750px) {
+  .snap-card {
+    width: 315px;
+  }
+}

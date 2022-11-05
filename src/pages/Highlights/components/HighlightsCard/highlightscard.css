@@ -1,0 +1,157 @@
+.highlight-card {
+  width: 350px;
+  min-height: 250px;
+  height: auto;
+  border-radius: 7px;
+  margin-top: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.highlight-card-header {
+  width: 100%;
+  height: 165px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.highlight-card-content {
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  text-overflow: ellipsis;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.highlight-card-content > p {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  font-family: "Merriweather";
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.highlight-card-dark-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  user-select: none;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.highlight-card-header-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.highlight-card-header-info {
+  color: #ffff;
+  display: flex;
+  align-items: center;
+}
+
+.highlight-card-website {
+  width: 220px;
+  font-size: 15px;
+  margin-bottom: 0;
+  color: #fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Merriweather";
+}
+
+.highlight-card-createdon {
+  color: #fff;
+  font-size: 13px;
+  margin-left: auto;
+  white-space: nowrap;
+  font-family: "Merriweather";
+}
+
+.highlight-card-ellipsis {
+  cursor: pointer;
+}
+
+.highlight-card-menu {
+  width: 205px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlight-card-menu > div {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 8px;
+  user-select: none;
+}
+
+.highlight-card-menu > div > img {
+  margin-right: 10px;
+}
+
+.highlight-card-menu > div:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.highlight-card-menu > div:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.highlight-card-menu > div:hover {
+  background-color: #eee;
+}
+
+.tag-input-container-highlight-card > .ant-select {
+  width: 100%;
+}
+
+.tag-input-container-highlight-card > .ant-select * {
+  color: #000;
+}
+
+.tag-input-container-highlight-card > .ant-select > .ant-select-selector {
+  box-shadow: none !important;
+  border-radius: 100px;
+  background-color: transparent !important;
+  border: none !important;
+  color: #fff;
+}
+
+.tag-input-container-highlight-card > .ant-select-open > .ant-select-selector {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #fff;
+}
+
+.tag-input-container-highlight-card .ant-select-selection-item-content {
+  color: #000;
+}
+
+@media only screen and (max-width: 750px) {
+  .highlight-card {
+    width: 315px;
+  }
+}

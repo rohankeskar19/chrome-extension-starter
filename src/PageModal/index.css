@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif !important;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: transparent !important;
+}
+
+.frame-root,
+.frame-content {
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.ant-tooltip-inner {
+  border-radius: 5px;
+  user-select: none;
+}
+
+.ant-popover-inner-content {
+  padding: 0;
+}
+
+.ant-popover-inner {
+  border-radius: 3px;
+  background-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: rgb(199, 199, 199);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(168, 168, 168);
+}
+
+.no-arrow .ant-popover-arrow {
+  display: none;
+  border: none;
+}
+p {
+  margin-bottom: 0;
+}
+
+.ant-popover-inner-content {
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.0001rem;
+}
+
+.ant-btn-primary {
+  background-color: #2e3235;
+  border-color: #2e3235;
+  border-radius: 4px;
+}
+
+.ant-message-notice-content {
+  border-radius: 8px;
+  user-select: none;
+}
+
+.ant-btn-primary:focus {
+  background-color: #2e3235;
+  border-color: #2e3235;
+}
+
+.ant-btn-primary:hover {
+  background-color: #2e3235;
+  border-color: #2e3235;
+}
+
+.modal-tag-input {
+  border-radius: 4px;
+}
+
+.ant-image-preview-operations-operation svg {
+  width: 22px;
+}
+
+.ant-image-preview-operations-operation.ant-image-preview-operations-operation-disabled
+  path {
+  fill: rgba(238, 238, 238, 0.527);
+}
+
+.ant-image-preview-operations {
+  background: none !important;
+}
+
+.ant-image-preview-img-wrapper {
+  padding: 40px !important;
+}
+
+.ant-upload-list-text {
+  display: none;
+}
+
+.ant-select > .ant-select-selector {
+  border: 1px solid #d9d9d9 !important;
+  box-shadow: none !important;
+}
+
+.ant-select-dropdown {
+  border-radius: 7px;
+}
+
+.tag-not-found-content {
+  display: flex;
+  align-items: center;
+}
+.tag-not-found-content > img {
+  margin-left: 5px;
+}

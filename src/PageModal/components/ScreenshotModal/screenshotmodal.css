@@ -1,0 +1,134 @@
+.rounded-edgemark {
+  position: absolute;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  user-select: none;
+}
+
+.edgemark-n {
+  top: -11px;
+  left: calc(50% - 10px);
+}
+
+.edgemark-ne {
+  top: -10px;
+  right: -10px;
+}
+
+.edgemark-e {
+  top: calc(50% - 10px);
+  right: -11px;
+}
+
+.edgemark-se {
+  bottom: -10px;
+  right: -10px;
+}
+
+.edgemark-s {
+  bottom: -11px;
+  left: calc(50% - 10px);
+}
+
+.edgemark-sw {
+  bottom: -10px;
+  left: -10px;
+}
+
+.edgemark-w {
+  top: calc(50% - 10px);
+  left: -11px;
+}
+
+.edgemark-nw {
+  top: -10px;
+  left: -10px;
+}
+
+.resize-window-resolution {
+  min-width: 90px;
+  max-width: 250px;
+  height: 25px;
+  background-color: #fff;
+  border-top-right-radius: 5px;
+  color: #7c7c7c;
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  padding: 0 3px;
+}
+
+.done-button {
+  width: 65px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  top: -40px;
+  left: 8px;
+}
+
+.done-button :active {
+  background-color: #eee;
+}
+
+.close-button {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  top: -40px;
+  right: 8px;
+}
+
+.close-button:active {
+  background-color: #eee;
+}
+
+.resize-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.child-container {
+  position: relative;
+  color: #fff;
+}
+
+.child-container.border {
+  border: 1px solid #00d19c;
+}
+
+.size-auto {
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  right: 15px;
+  left: 15px;
+}
+
+#crop-tool {
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  position: fixed;
+}

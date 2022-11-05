@@ -1,0 +1,97 @@
+[{
+    "id": "paragraph",
+    "type": "paragraph",
+    "label": "Paragraph",
+    "description": "Normal text"
+    
+  },
+  {
+    "id": "heading-one",
+    "type": "heading-one",
+    "label": "Heading 1",
+    "description": "Section heading"
+   
+  },
+  {
+    "id": "heading-two",
+    "type": "heading-two",
+    "label": "Heading 2",
+    "description": "Section sub heading"
+ 
+  },
+  {
+    "id": "heading-three",
+    "type": "heading-three",
+    "label": "Heading 3",
+    "description": "Section sub heading"
+  },
+  {
+    "id": "checkbox-item",
+    "type": "checkbox-item",
+    "label": "Todo List",
+    "description": "Add a todo list"
+  },
+  {
+    "id": "unordered-list-item",
+    "type": "unordered-list-item",
+    "label": "Bulleted List",
+    "description": "Create a bulleted list"
+  },
+  {
+    "id": "ordered-list-item",
+    "type": "ordered-list-item",
+    "label": "Numbered List",
+    "description": "Create a numbered list"
+  },
+  {
+    "id": "image",
+    "type": "image",
+    "label": "Image",
+    "description": "Add Image"
+  },
+  {
+    "id": "video",
+    "type": "video",
+    "label": "Video",
+    "description": "Embed video"
+  },
+
+ 
+  {
+    "id": "divider",
+    "type": "divider",
+    "label": "Divider",
+    "description": "Section divider"
+  },
+ 
+  {
+    "id": "block-quote",
+    "type": "block-quote",
+    "label": "Quote",
+    "description": "Add a quote"
+  },
+
+  {
+    "id": "equation",
+    "type": "equation",
+    "label": "Equation",
+    "description": "Add a mathematic equation"
+  },
+  {
+    "id": "bookmark",
+    "type": "bookmark",
+    "label": "Bookmark",
+    "description": "Add bookmark"
+  },
+  {
+    "id": "tweet",
+    "type": "tweet",
+    "label": "Tweet",
+    "description": "Embed tweet"
+  },
+  {
+    "id": "youtube-moment",
+    "type": "youtube-moment",
+    "label": "Save youtube moment",
+    "description": "Create link to current youtube moment"
+  }]

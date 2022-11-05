@@ -1,0 +1,23 @@
+.tag-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: auto;
+  min-width: 50px;
+  height: 25px;
+  border-radius: 3px;
+  padding: 5px;
+  padding-left: 5px;
+  margin: 3px;
+  background-color: #e2e2e2 !important;
+}
+
+.tag-item > p {
+  margin-right: 3px;
+  font-size: 14px;
+  color: #000;
+}
+.tag-item svg {
+  cursor: pointer;
+  user-select: none;
+}

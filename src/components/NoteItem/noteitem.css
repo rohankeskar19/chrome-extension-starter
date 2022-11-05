@@ -1,0 +1,275 @@
+.page-item {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  padding: 17px;
+  position: relative;
+}
+
+.page-item:hover .add-page-button {
+  opacity: 1;
+}
+
+.page-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.page-item span {
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 11px;
+}
+
+.page-item-active {
+  background-color: #6603a0;
+  transition: all 0.2s;
+}
+
+.page-item:hover {
+  background-color: #6603a0;
+}
+
+.sidebar-container a.active .page-item {
+  background-color: #6603a0;
+}
+
+.page-item-context-menu {
+  width: 200px;
+  height: auto;
+  list-style: none;
+  padding: 0;
+  /* border-radius: 8px; */
+  margin: 0;
+  background-color: #fff;
+  z-index: 10000;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.page-item-context-menu li {
+  width: 100%;
+  height: 35px;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.page-item-context-menu li:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.page-item-context-menu li img {
+  width: 17px;
+}
+
+.page-item-context-menu li span {
+  margin-left: 10px;
+}
+
+/* .page-item-context-menu li:first-of-type {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.page-item-context-menu li:last-of-type {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+} */
+
+.add-page-button {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin-left: auto;
+  padding: 12px;
+  opacity: 0;
+  background-color: #490172;
+}
+
+.add-page-button img {
+  margin: 0;
+}
+
+.caret:hover,
+.caret-open:hover {
+  background-color: #490172;
+}
+
+.caret,
+.caret-open {
+  width: 20px !important;
+  transition: all 0.2s;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.caret-open {
+  transform: rotate(90deg);
+}
+
+.sub-page-container {
+  display: none;
+  height: 0;
+}
+
+.subpage-open {
+  display: block;
+  height: auto;
+}
+.sub-page-container p {
+  color: #fff;
+}
+
+.add-page-button {
+  position: absolute;
+  right: 17px;
+  top: 5px;
+}
+
+.empty-text {
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+
+.rename-note-container {
+  width: 350px;
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+
+.rename-note-container button {
+  background-color: #8b05d8;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+  border: none;
+  margin-left: 5px;
+  padding: 4px;
+  width: 60px;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.rename-note-container button:hover {
+  background-color: #7102b1;
+}
+
+.rename-note-container input {
+  width: 80%;
+  border-radius: 3px;
+}
+
+.context-menu {
+  width: 180px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.context-menu > div {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.context-menu img {
+  width: 15px;
+  height: 15px;
+}
+
+.context-menu > div:first-of-type {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.context-menu > div:last-of-type {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.context-menu > div:hover {
+  background-color: #eee;
+}
+
+.context-menu > div span {
+  color: #000;
+}
+.note-highlight-color {
+  min-width: 5px;
+  min-height: 5px;
+  max-width: 5px;
+  max-height: 5px;
+  border-radius: 100px;
+}
+
+.note-name {
+  width: 99%;
+  max-width: 99%;
+  max-lines: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-left: 9px;
+}
+
+.note-item {
+  width: 100%;
+  height: 37px;
+  margin-top: 1px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.note-item > div {
+  width: 100%;
+  height: 100%;
+  margin-top: 1px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.note-item:hover {
+  background-color: #202020;
+}
+.note-item:active {
+  background-color: #141414;
+}
+.note-item:focus {
+  background-color: #202020;
+}
