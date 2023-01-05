@@ -1,6 +1,6 @@
 {
-  "short_name": "Notealy",
-  "name": "Notealy",
+  "short_name": "Extension name",
+  "name": "Extension name",
   "version": "1.02",
   "manifest_version": 3,
   "background": {
