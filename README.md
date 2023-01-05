@@ -18,9 +18,9 @@ The boilerplate is to quickly create a chrome extension using ReactJs, The motiv
 ## Installation
 
 1. Make sure you have latest **NodeJs** version installed
-2. Run yarn install or npm install for installing the packages
-3. After installing run yarn watch or npm run watch while developing for hot realoading, It will create a build folder which has to be loaded into the browser from load unpacked
-4. Use yarn start or npm run start to run the app in the browser
+2. Run `yarn install` or `npm install` for installing the packages
+3. After installing run `yarn watch` or `npm run watch` while developing for hot realoading, It will create a build folder which has to be loaded into the browser from load unpacked
+4. Use `yarn start` or `npm run start` to run the app in the browser
 
 ## Building your chrome extension
 
