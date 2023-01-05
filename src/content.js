@@ -1,5 +1,6 @@
 /*global chrome*/
 /* src/content.js */
+// Content script which will get injected into page
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -43,8 +44,6 @@ const app = document.createElement("div");
 app.id = "extension-root";
 
 document.body.appendChild(app);
-
-app.style.display = "none";
 
 ReactDOM.render(<Main />, app);
 
