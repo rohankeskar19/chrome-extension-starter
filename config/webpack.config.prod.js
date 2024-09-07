@@ -62,6 +62,7 @@ module.exports = {
   entry: {
     app: [require.resolve("./polyfills"), paths.appIndexJs],
     content: [require.resolve("./polyfills"), "./src/content.js"],
+    newpage: [require.resolve("./polyfills"), "./src/newpage.js"],
   },
   optimization: {
     minimize: false, //Update this to true or false
@@ -279,7 +280,27 @@ module.exports = {
     // Generates an `index.html` file with the <script> injected.
     new HtmlWebpackPlugin({
       inject: true,
-      template: paths.appHtml,
+      template: paths.appHtml, // Template for index.html
+      filename: "index.html", // Output filename
+      chunks: ["app"], // Include the 'app' bundle
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: paths.newPageHtml,
+      filename: "newpage.html", // Output filename for newpage
+      chunks: ["newpage"], // Include the 'newpage' bundle
       minify: {
         removeComments: true,
         collapseWhitespace: true,

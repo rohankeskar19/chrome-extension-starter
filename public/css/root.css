@@ -2,9 +2,7 @@
 #extension-root {
   width: 60%;
   height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
+
   background-color: white;
   z-index: 1000;
 }

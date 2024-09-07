@@ -16,6 +16,11 @@
   },
   "content_scripts": [
     {
+      "matches": ["chrome://newtab/"],
+      "js": ["/static/js/newpage.js"],
+      "css": ["/static/css/newpage.css"]
+    },
+    {
       "matches": ["<all_urls>"],
       "css": ["/css/root.css"],
       "js": ["/static/js/content.js"]
@@ -27,6 +32,9 @@
       "matches": ["<all_urls>"]
     }
   ],
+  "chrome_url_overrides": {
+    "newtab": "newpage.html"
+  },
   "permissions": ["webNavigation", "storage", "scripting"],
   "host_permissions": ["<all_urls>"],
   "content_security_policy": { "script-src": "self", "object-src": "self" }
