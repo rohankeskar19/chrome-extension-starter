@@ -1,9 +1,0 @@
-{
-  "app.css": "/static/css/app.css",
-  "app.js": "/static/js/app.js",
-  "content.js": "/static/js/content.js",
-  "newpage.css": "/static/css/newpage.css",
-  "newpage.js": "/static/js/newpage.js",
-  "index.html": "/index.html",
-  "newpage.html": "/newpage.html"
-}
