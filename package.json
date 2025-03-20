@@ -1,0 +1,158 @@
+{
+  "name": "my-extension",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^7.10.4",
+    "autoprefixer": "^9.8.5",
+    "axios": "^0.24.0",
+    "case-sensitive-paths-webpack-plugin": "^2.3.0",
+    "chalk": "^4.1.0",
+    "css-loader": "^3.6.0",
+    "dotenv": "^8.2.0",
+    "dotenv-expand": "^5.1.0",
+    "firebase": "^9.5.0",
+    "fs-extra": "^9.0.1",
+    "is-url": "^1.2.4",
+    "jquery": "^3.6.0",
+    "jquery-ui": "^1.13.0",
+    "keycode": "^2.2.1",
+    "lodash": "^4.17.21",
+    "match-sorter": "^6.3.1",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "promise": "8.0.1",
+    "prop-types": "^15.7.2",
+    "raf": "3.4.1",
+    "randomcolor": "^0.6.2",
+    "react": "^16.13.1",
+    "react-contextmenu": "^2.14.0",
+    "react-dnd": "^14.0.5",
+    "react-dnd-html5-backend": "^14.1.0",
+    "react-dom": "^16.13.1",
+    "react-drag-resize": "^0.1.4",
+    "react-frame-component": "^4.1.2",
+    "react-katex": "^2.0.2",
+    "react-loader-spinner": "^4.0.0",
+    "react-masonry-css": "^1.0.16",
+    "react-redux": "^7.2.6",
+    "react-resizable": "^3.0.4",
+    "react-rnd": "^10.3.5",
+    "react-sidebar": "^3.0.2",
+    "react-simple-code-editor": "^0.11.0",
+    "react-twitter-widgets": "^1.10.0",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "resolve": "^1.17.0",
+    "styled-components": "^5.3.6",
+    "svg-url-loader": "^7.1.1",
+    "tailwindcss": "^4.0.14",
+    "use-debounce": "^7.0.1",
+    "uuid": "^8.3.2",
+    "whatwg-fetch": "3.2.0"
+  },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src",
+        "public"
+      ],
+      "extensions": "js,html,scss,css,json,svg"
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx}"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node",
+      "mjs"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "react-app",
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
+    "@typescript-eslint/parser": "^3.6.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
+    "eslint": "^7.4.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.7",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "npm-watch": "^0.6.0",
+    "postcss-loader": "^3.0.0",
+    "react-dev-utils": "^10.2.1",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^1.2.1",
+    "svg-url-loader": "^7.1.1",
+    "sw-precache-webpack-plugin": "^1.0.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.3",
+    "webpack-manifest-plugin": "^2.2.0"
+  },
+  "browsers": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 9"
+  ],
+  "flexbox": "no-2009"
+}
