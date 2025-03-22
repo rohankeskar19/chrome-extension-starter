@@ -170,8 +170,7 @@ module.exports = {
                 options: {
                   postcssOptions: {
                     plugins: [
-                      // Import tailwindcss properly
-                      ["@tailwindcss/postcss", {}],
+                      ["tailwindcss", {}],
                       ["autoprefixer", {}],
                     ],
                   },

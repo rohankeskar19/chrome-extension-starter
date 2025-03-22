@@ -6,9 +6,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Frame, { FrameContextConsumer } from "react-frame-component";
 import "simplebar-react/dist/simplebar.min.css";
+import "./tailwind.css";
 
 import CommandPalette from "./CommandPalette";
-console.log("Inside Content Script");
+
 class Main extends React.Component {
   render() {
     return (
