@@ -72,6 +72,8 @@ function toggleCommandPalette() {
     const currentDisplay = frame.style.display;
     frame.style.display =
       currentDisplay === "none" || currentDisplay === "" ? "block" : "none";
+    app.style.display =
+      currentDisplay === "none" || currentDisplay === "" ? "block" : "none";
 
     if (currentDisplay === "none" || currentDisplay === "") {
       // Focus the command palette input when opened
@@ -95,6 +97,7 @@ document.addEventListener("keydown", (e) => {
     const frame = document.getElementById("command-palette-frame");
     if (frame && frame.style.display === "block") {
       frame.style.display = "none";
+      app.style.display = "none";
     }
   }
 });
