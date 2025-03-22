@@ -5,6 +5,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Frame, { FrameContextConsumer } from "react-frame-component";
+import "simplebar-react/dist/simplebar.min.css";
 
 import CommandPalette from "./CommandPalette";
 
@@ -18,26 +19,22 @@ class Main extends React.Component {
             rel="stylesheet"
             href={chrome.runtime.getURL("/static/css/content.css")}
           ></link>,
-          <link
-            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-            rel="stylesheet"
-          ></link>,
           <link rel="preconnect" href={"https://fonts.googleapis.com"}></link>,
           <link rel="preconnect" href={"https://fonts.gstatic.com"}></link>,
         ]}
         id="command-palette-frame"
         style={{
-          display: "none", // Initially hidden
+          display: "none",
           position: "fixed",
           top: "20%",
           left: "50%",
           transform: "translateX(-50%)",
-          width: "500px",
+          width: "700px",
           height: "400px",
           border: "none",
           borderRadius: "8px",
           boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
-          zIndex: "2147483647", // Highest z-index
+          zIndex: "2147483647",
         }}
       >
         <FrameContextConsumer>
@@ -74,6 +71,8 @@ function toggleCommandPalette() {
       currentDisplay === "none" || currentDisplay === "" ? "block" : "none";
     app.style.display =
       currentDisplay === "none" || currentDisplay === "" ? "block" : "none";
+    app.style.pointerEvents =
+      currentDisplay === "none" || currentDisplay === "" ? "all" : "none";
 
     if (currentDisplay === "none" || currentDisplay === "") {
       // Focus the command palette input when opened
@@ -98,6 +97,7 @@ document.addEventListener("keydown", (e) => {
     if (frame && frame.style.display === "block") {
       frame.style.display = "none";
       app.style.display = "none";
+      app.style.pointerEvents = "none";
     }
   }
 });
