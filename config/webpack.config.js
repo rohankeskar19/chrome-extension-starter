@@ -1,6 +1,5 @@
 "use strict";
 
-const autoprefixer = require("autoprefixer");
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -28,7 +27,7 @@ const cssFilename = "static/css/[name].css";
 
 module.exports = {
   mode: "production",
-  target: ["web", "es5"], // Specifies compilation targets
+  target: ["web", "es5"],
   bail: true,
   devtool: false,
   entry: {
@@ -71,7 +70,6 @@ module.exports = {
       path
         .relative(paths.appSrc, info.absoluteResourcePath)
         .replace(/\\/g, "/"),
-    clean: true,
   },
   resolve: {
     modules: ["node_modules", paths.appNodeModules].concat(
@@ -205,24 +203,6 @@ module.exports = {
       template: paths.appHtml,
       filename: "index.html",
       chunks: ["app"],
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true,
-        removeRedundantAttributes: true,
-        useShortDoctype: true,
-        removeEmptyAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        keepClosingSlash: true,
-        minifyJS: true,
-        minifyCSS: true,
-        minifyURLs: true,
-      },
-    }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      template: paths.newPageHtml,
-      filename: "newpage.html",
-      chunks: ["newpage"],
       minify: {
         removeComments: true,
         collapseWhitespace: true,
