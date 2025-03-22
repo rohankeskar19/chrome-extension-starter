@@ -51,25 +51,18 @@ module.exports = {
         extractComments: false,
       }),
     ],
-    // Add splitChunks configuration
-    splitChunks: {
-      chunks: "all",
-      name: false,
-    },
-    // Add runtimeChunk
-    runtimeChunk: {
-      name: (entrypoint) => `runtime-${entrypoint.name}`,
-    },
+    splitChunks: false,
+    runtimeChunk: false,
   },
   output: {
     path: paths.appBuild,
     filename: "static/js/[name].js",
-    chunkFilename: "static/js/[name].[chunkhash:8].chunk.js",
     publicPath: publicPath,
     devtoolModuleFilenameTemplate: (info) =>
       path
         .relative(paths.appSrc, info.absoluteResourcePath)
         .replace(/\\/g, "/"),
+    // clean: true,
   },
   resolve: {
     modules: ["node_modules", paths.appNodeModules].concat(
