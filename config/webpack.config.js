@@ -32,7 +32,9 @@ module.exports = {
   devtool: false,
   entry: {
     app: [require.resolve("./polyfills"), paths.appIndexJs],
+    dashboard: [require.resolve("./polyfills"), paths.dashboardIndexJs],
     content: [require.resolve("./polyfills"), "./src/content.js"],
+    background: [require.resolve("./polyfills"), paths.backgroundScript],
   },
   optimization: {
     minimize: shouldMinimize,
@@ -65,9 +67,11 @@ module.exports = {
     // clean: true,
   },
   resolve: {
-    modules: ["node_modules", paths.appNodeModules].concat(
-      process.env.NODE_PATH.split(path.delimiter).filter(Boolean)
-    ),
+    modules: [
+      "node_modules",
+      paths.appNodeModules,
+      path.resolve(__dirname, "public"),
+    ].concat(process.env.NODE_PATH.split(path.delimiter).filter(Boolean)),
     extensions: [".web.js", ".mjs", ".js", ".json", ".web.jsx", ".jsx"],
     alias: {
       "react-native": "react-native-web",
@@ -195,6 +199,24 @@ module.exports = {
       template: paths.appHtml,
       filename: "index.html",
       chunks: ["app"],
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: paths.dashboardHtml,
+      filename: "dashboard.html",
+      chunks: ["dashboard"],
       minify: {
         removeComments: true,
         collapseWhitespace: true,
